@@ -1,10 +1,16 @@
 # Pegar aquí la salida de los 3 curl del Lab 3
 
 ## GET /poleras
+dilanm@Dilans-MacBook-Air obtener-partido % curl https://01ovtp0iyg.execute-api.us-east-1.amazonaws.com/prod/poleras
+{"poleras":[{"archivo":"argentina.svg","url":"https://mundial-poleras-mamani.s3.amazonaws.com/poleras/argentina.svg"},{"archivo":"brasil.svg","url":"https://mundial-poleras-mamani.s3.amazonaws.com/poleras/brasil.svg"},{"archivo":"espana.svg","url":"https://mundial-poleras-mamani.s3.amazonaws.com/poleras/espana.svg"},{"archivo":"mexico.svg","url":"https://mundial-poleras-mamani.s3.amazonaws.com/poleras/mexico.svg"}],"total":4}%          
+dilanm@Dilans-MacBook-Air obtener-partido % 
 
 
 ## GET /partidos
 
-
+dilanm@Dilans-MacBook-Air obtener-partido % curl https://01ovtp0iyg.execute-api.us-east-1.amazonaws.com/prod/partidos
+{"partidos":[{"local":"México","visitante":"Sudáfrica","estadio":"Estadio Azteca","id":"partido-001","grupo":"A","fecha":"2026-06-11"},{"local":"Brasil","visitante":"Marruecos","estadio":"MetLife Stadium","id":"partido-002","grupo":"B","fecha":"2026-06-12"},{"local":"Argentina","visitante":"Polonia","estadio":"Hard Rock Stadium","id":"partido-003","grupo":"c","fecha":"2026-06-13"},{"local":"España","visitante":"Japón","estadio":"SoFi Stadium","id":"partido-004","grupo":"D","fecha":"2026-06-14"}],"total":4}                                    
 ## GET /partidos/partido-001
 
+dilanm@Dilans-MacBook-Air obtener-partido % curl https://01ovtp0iyg.execute-api.us-east-1.amazonaws.com/prod/partidos/partido-001
+{"local":"México","visitante":"Sudáfrica","estadio":"Estadio Azteca","id":"partido-001","grupo":"A","fecha":"2026-06-11"}%    
